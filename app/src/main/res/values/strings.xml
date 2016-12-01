@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Bulk Sms</string>
+    <string name="app_url">http://www.bulksms-kmer.com</string>
+
+    <!-- Start of Navigation Drawer literature -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="activities_title">Actions</string>
+    <string name="nav_contacts">See Contacts</string>
+    <string name="nav_balance">Check Balance</string>
+    <string name="balance_url">http://api.wasamundi.com/v2/texto/balance?user=motherslove&amp;api_key=nKjahG4T</string>
+    <!-- End of Navigation Drawer literature -->
+
+    <!-- Start of Home activity literature -->
+    <string name="send_messages">Send Messages</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="retrieve_contacts">Retrieve Contacts</string>
+    <string name="retrieve_ok">Successfully retrieved contacts</string>
+    <string name="backup_contacts">Backup Contacts</string>
+    <string name="no_contacts">No contacts</string>
+    <string name="up_to_date">No contacts to back up</string>
+    <string name="backup_ok">Contacts backed up successfully!</string>
+    <string name="network_error">Couldn\'t establish communication with server. Please try again later</string>
+    <string name="server_failure">The remote end hung up unexpectedly. Please try again later</string>
+    <string name="no_network">Please connect to a network and try again</string>
+    <!-- End of Home activity literature -->
+
+    <!-- Start of SendMessages activity literature -->
+    <string name="title_activity_send_messages">Send Messages</string>
+    <string name="sender_label"><b>Sender:</b></string>
+    <string name="sender_hint">11 characters max</string>
+    <string name="number_label"><b>Number of Recipients:</b></string>
+    <string name="number_hint">Enter number of recipients</string>
+    <string name="message_label"><b>Message:</b></string>
+    <string name="message_hint">Enter message here</string>
+    <string name="page_label">Pages:&#160;</string>
+    <string name="page_count">0</string>
+    <string name="error_sending">There was an error performing your request</string>
+    <!-- End of SendMessages activity literature -->
+
+    <!-- Start of AddContact activity literature -->
+    <string name="title_activity_add_contact">Add Contact</string>
+    <string name="contact_exists">Contact already exists</string>
+    <string name="phone_label"><b>Phone Number:</b></string>
+    <string name="phone_hint">Enter phone number here</string>
+    <string name="save_contact">Save Contact</string>
+    <string name="empty_field">Field cannot be empty</string>
+    <string name="invalid_phone">Invalid phone number</string>
+    <string name="contact_saved">Contact saved</string>
+    <!-- End of AddContact activity literature -->
+
+    <!-- Start of Contacts activity literature -->
+    <string name="title_activity_contacts">Contacts</string>
+    <string name="delete_title">Delete</string>
+    <string name="delete_warning">Are you sure you want to delete this item?</string>
+    <string name="delete_ok">Yes</string>
+    <string name="delete_cancel">Cancel</string>
+    <!-- End of Contacts activity literature -->
+</resources>

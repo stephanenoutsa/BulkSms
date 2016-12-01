@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_send_messages"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.stephnoutsa.bulksms.SendMessages"
+    tools:showIn="@layout/activity_send_messages">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sender_label"
+            android:id="@+id/senderLabel" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:maxLength="11"
+            android:ems="10"
+            android:id="@+id/senderField"
+            android:hint="@string/sender_hint"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/senderLabel"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/senderField"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/number_label"
+            android:id="@+id/numberLabel"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ems="10"
+            android:id="@+id/numberField"
+            android:hint="@string/number_hint"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/numberLabel"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/message_label"
+            android:id="@+id/messageLabel"
+            android:layout_below="@+id/numberField"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/page_label"
+            android:id="@+id/pageLabel"
+            android:layout_below="@+id/numberField"
+            android:layout_toStartOf="@+id/pageCount"
+            android:layout_toLeftOf="@+id/pageCount"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/page_count"
+            android:id="@+id/pageCount"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/numberField"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="top"
+            android:maxLines="14"
+            android:maxLength="621"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/messageField"
+            android:textColor="@android:color/black"
+            android:hint="@string/message_hint"
+            android:background="@drawable/rectangular_shape"
+            android:padding="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/messageLabel" />
+
+        <Button
+            android:text="@string/send_messages"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_below="@+id/messageField"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sendMessages"
+            android:onClick="onClickSend" />
+
+    </RelativeLayout>
+
+</ScrollView>
